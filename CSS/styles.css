@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    background-color: #4da0e1;
+    color: white;
+}
+
+.links a{
+    margin-left: 1vw;
+}
+
+.vidbg {width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index:-1;
+}
+
+article {
+      position: fixed;
+      background-color: #cce4f6;
+      height: 25vh;
+      width: 100%;
+
+      margin-top: 27.5vh;
+      padding: 2.5vw;
+      opacity: 0.65;
+}
+
+.bannerhead {
+    font-size: 4vh;
+    color: #1a85d8;
+
+}
+
+@media screen and (max-width: 600px){
+
+    header{
+        background-color: #1a85d8;
+        padding: 1vw;
+        color: white;
+    }
+
+    nav{
+        position: relative;
+        display: inline-block;
+    }
+
+    .pagetitle{
+        background-color: #99c9ee;
+        padding: 1vw;
+        color: white;
+    }
+
+    .links{
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+    }
+
+    .links a{
+        background-color: #99c9ee;
+        color: white;
+        padding: 12px 16px;
+        display: block;
+    }
+
+    .links a:hover{
+        background-color: #80bbea;
+    }
+
+    nav:hover .links{
+        display: block;
+    }
+
+    nav:hover .pagetitle{
+        background-color: #66ade5;
+    }
+}
